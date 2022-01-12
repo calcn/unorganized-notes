@@ -1,0 +1,15 @@
+## Open Specific Port
+
+```
+[root@centos7 ~]# firewall-cmd --permanent --add-port=8080/tcp
+success
+[root@centos7 ~]# firewall-cmd --reload
+success
+```
+
+We can check the ports that are opened in the current default zone with ‘--list-ports’.
+
+```
+[root@centos7 ~]# firewall-cmd --list-ports
+8080/tcp
+```
